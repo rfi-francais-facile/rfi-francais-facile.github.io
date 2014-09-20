@@ -7,7 +7,7 @@
   },
   "developer": {
     "name": "Igor Montagner",
-    "url": ""
+    "url": "https://github.com/igordsm"
   },
   "permissions": {
       "audio-channel-content":{"description":"Play the news while the app is in the background."}
