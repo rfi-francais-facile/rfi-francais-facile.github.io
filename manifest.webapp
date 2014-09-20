@@ -1,0 +1,16 @@
+{
+  "name": "Français Facile",
+  "description": "Listen to the RFi's \"Journal en Français facile\".",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icon.png"
+  },
+  "developer": {
+    "name": "Igor Montagner",
+    "url": ""
+  },
+  "permissions": {
+      "audio-channel-content":{"description":"Play the news while the app is in the background."}
+  },
+  "default_locale": "en"
+}
