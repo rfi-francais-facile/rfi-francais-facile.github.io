@@ -20,15 +20,5 @@ function update_audio() {
     }
 }
 
-
-//audioplayer.addEventListener    
-
-/*var btnPlay = document.getElementById("btnPlay");
-btnPlay.addEventListener("click", function () {
-    audioplayer.play();
-});*/
-
 window.addEventListener("focus", update_audio);
 document.addEventListener("DOMContentLoaded", update_audio);
-console.log(FlurryAgent.startSession("8Z6Q227P5C8S6R5CGV8J"));
-console.log(FlurryAgent.logEvent("Start!!!"));
