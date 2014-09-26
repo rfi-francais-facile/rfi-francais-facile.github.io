@@ -1,6 +1,6 @@
 {
   "name": "Français Facile",
-  "description": "Listen to the RFi's \"Journal en Français facile\".",
+  "description": "Practice your french listening skill using online radio. Listen to the RFi's \"Journal en Français facile\", a summary of today's news spoken in simple french.",
   "launch_path": "/index.html",
   "icons": {
     "128": "/icon.png",
