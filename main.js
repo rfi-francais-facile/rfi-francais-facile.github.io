@@ -12,7 +12,12 @@ function update_audio() {
         src += "0";
     }
     src += today.getMonth()+1;
+    
+    if (today.getDate() < 10) {
+        src += "0";
+    }
     src += today.getDate();
+    
     src += ".mp3";
     console.log(src);
     if (audioplayer.src != src) {
