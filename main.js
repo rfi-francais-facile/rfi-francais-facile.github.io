@@ -1,10 +1,10 @@
 function update_audio(horaire) {
     var audioplayer = document.getElementById("audioplayer");
-    var h = horaire || "20h00_-_20h10_tu_";
-    var src = "http://telechargement.rfi.fr.edgesuite.net/rfi/francais/audio/journaux/r001/journal_francais_facile_" + h;
+    var h = horaire || 20;
+    var src = "http://telechargement.rfi.fr.edgesuite.net/rfi/francais/audio/journaux/r001/journal_francais_facile_" + h + "h00_-_"+ h + "h10_tu_";
 
     var today = new Date();
-    if (today.getUTCHours() < 20 || (today.getUTCHours() == 20 && today.getUTCMinutes() < 20)) {
+    if (today.getUTCHours() < h+2 || (today.getUTCHours() == h+2 && today.getUTCMinutes() < 20)) {
         today -= 3600 * 24 * 1000;
         today = new Date(today);
     }
@@ -33,7 +33,7 @@ function load() {
     audioplayer.addEventListener("error", function () {
         if (audioplayer.src.indexOf("20h00_-_20h10_tu_") != -1) {
             console.log("tentar horario de verao/inverno");
-            update_audio("21h00_-_21h10_tu_");
+            update_audio(21);
         }
     });
     
